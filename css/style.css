@@ -1,0 +1,220 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v26-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* bungee-shade-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Bungee Shade';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/bungee-shade-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+    background: url(../img/bg.gif) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+
+.wrapper {
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    font-family: 'Bungee Shade';
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+.header__title {
+    font-size: 64px;
+}
+
+.widgets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 150px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px auto 0;
+}
+
+.weather__widget {
+    padding: 30px;
+}
+
+.location {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    text-align: center;
+    padding-left: 5px;
+}
+
+.temperature {
+    display: flex;
+    font-size: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+.courses__widget {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 20px;
+
+}
+
+.news__widget {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px auto 0;
+    background: url(../img/3x54zpkKkYY.jpg) no-repeat center;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.text__news {
+    height: 100px;
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+    background-color: rgb(255, 255, 255, 70%);
+}
+
+.name__news {
+    font-weight: 600;
+}
+
+.description__news {
+    font-size: 12px;
+}
+
+.data__news {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.time__news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+.gpt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 100px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 20px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.gpt__name {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(0, 0, 0, 30%);
+    margin-right: 160px;
+}
+
+.gpt__description {
+    font-size: 16px;
+    color: rgb(0, 0, 0, 30%);
+    margin-right: 155px;
+}
+
+.stiker {
+    height: 125px;
+    width: 125px;  
+    margin-right: 20px;
+    animation: 20s linear infinite rotate
+
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.footer__wrapper {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    color: grey;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.icon__link {
+    font-size: 30px;
+    color: grey;
+    text-decoration: none;
+    margin: 5px;
+}
+
+
+
